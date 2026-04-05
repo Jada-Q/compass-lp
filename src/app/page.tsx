@@ -1,3 +1,5 @@
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@example.com";
+
 export default function LandingPage() {
   return (
     <>
@@ -279,7 +281,7 @@ export default function LandingPage() {
             3ヶ月間の無料トライアル実施中。導入サポート・データ移行も無料です。
           </p>
           <a
-            href="mailto:ptp.qiuyu@gmail.com?subject=COMPASS%20無料トライアルのお問い合わせ&body=【企業名・団体名】%0A%0A【ご担当者名】%0A%0A【受入人数（概算）】%0A%0A【ご質問・ご要望】%0A"
+            href={`mailto:${CONTACT_EMAIL}?subject=COMPASS%20無料トライアルのお問い合わせ&body=【企業名・団体名】%0A%0A【ご担当者名】%0A%0A【受入人数（概算）】%0A%0A【ご質問・ご要望】%0A`}
             className="inline-block rounded-lg bg-white px-8 py-3.5 text-base font-medium text-blue-900 transition hover:bg-blue-50"
           >
             メールでお問い合わせ
