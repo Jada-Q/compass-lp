@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://compass-compliance.vercel.app/sitemap.xml
