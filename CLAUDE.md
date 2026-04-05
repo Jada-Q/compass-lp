@@ -26,7 +26,7 @@ Single-page static site. All content is in `src/app/page.tsx` (one React compone
 - `src/app/page.tsx` — Full landing page: Hero → Problem → Features → Comparison → Steps → FAQ → Contact CTA
 - `public/robots.txt`, `public/sitemap.xml` — SEO files (update sitemap URL if domain changes)
 
-Contact CTA uses a `mailto:` link to `ptp.qiuyu@gmail.com` with pre-filled subject and body template.
+Contact CTA uses a `mailto:` link with pre-filled subject/body. Email is set via `NEXT_PUBLIC_CONTACT_EMAIL` env var (configured in Vercel).
 
 ## Conventions
 
